@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.psBtn {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.playBtn {
+    width: 100px;
+}
+
+.score {
+    width: 250px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #339933;
+    margin-bottom: 15px;
+}
+
+.timer {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #ff6633;
+}
+
+
+
+/* main */
+
+.ground {
+    max-width: 100%;
+}
