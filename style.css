@@ -5,7 +5,29 @@
     border: 0;
 }
 
-/* header */
+body {
+    background-color: black;
+}
+
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.ground {
+    display: block;
+    width: 1200px;
+    border-radius: 30px;
+}
+
+.click {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 header {
     display: flex;
@@ -13,8 +35,6 @@ header {
     align-items: center;
     position: absolute;
     top: 10px;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 .psBtn {
@@ -29,24 +49,34 @@ header {
 }
 
 .score {
-    width: 250px;
-    height: 80px;
+    width: 200px;
+    height: 70px;
     border-radius: 10px;
     background-color: #339933;
     margin-bottom: 15px;
+    font-size: 60px;
+    line-height: 1em;
+    text-align: center;
+    color: white;
 }
 
 .timer {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
     background-color: #ff6633;
+    font-size: 60px;
+    line-height: 1.35em;
+    text-align: center;
+    color: white;
 }
 
-
-
-/* main */
-
-.ground {
-    max-width: 100%;
+footer {
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    bottom: 80px;
+    border-radius: 20px;
+    opacity: 0.6;
+    background-color: black;
 }
