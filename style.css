@@ -38,15 +38,15 @@ header {
 }
 
 .psBtn {
-    height: 100px;
     width: 100px;
-    border-radius: 50%;
+    height: 100px;
+    font-size: 50px;
     margin-bottom: 15px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: bisque;
 }
 
-.playBtn {
-    width: 100px;
-}
 
 .score {
     width: 200px;
@@ -73,10 +73,27 @@ header {
 
 footer {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 500px;
     height: 150px;
     bottom: 80px;
     border-radius: 20px;
-    opacity: 0.6;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5); /* opacity를 적용하면 자식요소도 적용되므로 rgba값을 줬음(rgba는 자식요소 적용안됨) */
+}
+
+.restart {
+    width: 90px;
+    height: 90px;
+    font-size: 50px;
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: bisque;
+}
+
+.result {
+    font-size: 40px;
+    color: white;
 }
