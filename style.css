@@ -25,8 +25,14 @@ section {
 
 .click {
     position: absolute;
-    top: 0;
-    left: 0;
+}
+
+.carrot {
+    position: absolute;
+}
+
+.bug {
+
 }
 
 header {
