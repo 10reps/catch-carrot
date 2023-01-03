@@ -7,18 +7,25 @@ const time = { };
 const carrot = document.querySelector('.carrot');
 const bug = document.querySelector('.bug');
 
-const aaa = Math.floor(Math.random() * 100);
-carrot.style.top = `${aaa}`;
-
 let second = 59;
 
 function counter() {
     time.interval = setInterval(() => {
         timer.innerHTML = second;
         second--;
+
+        let carrotHeight = Math.floor(Math.random() * 300);
+        let carrotWidth = Math.floor(Math.random() * 1100);
+        let bugHeight = Math.floor(Math.random() * 300);
+        let bugWidth = Math.floor(Math.random() * 1100);
+
+        carrot.style.top = `${carrotHeight}px`;
+        carrot.style.left = `${carrotWidth}px`;
+        bug.style.top = `${bugHeight}px`;
+        bug.style.left = `${bugWidth}px`;
         
         if(second < 0) {
-            clearInterval(count);
+            clearInterval(time.interval);
         };
     }, 1000);
 };
