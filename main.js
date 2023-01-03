@@ -4,6 +4,12 @@ const stopBtn = document.querySelector('.stopBtn');
 const timer = document.querySelector('.timer');
 const time = { };
 
+const carrot = document.querySelector('.carrot');
+const bug = document.querySelector('.bug');
+
+const aaa = Math.floor(Math.random() * 100);
+carrot.style.top = `${aaa}`;
+
 let second = 59;
 
 function counter() {
