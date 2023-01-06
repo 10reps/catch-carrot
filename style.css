@@ -53,14 +53,18 @@ header {
 }
 
 .playBtn {
-    width: 100px;
-    height: 100px;
+    padding: 20px 30px;
     font-size: 50px;
     margin-bottom: 15px;
     border: 3px solid black;
     border-radius: 20px;
     background-color: bisque;
 }
+
+.playBtn:hover {
+    font-size: 60px;
+}
+
 
 .stopBtn {
     width: 100px;

@@ -50,6 +50,6 @@ playBtn.addEventListener("click", () => {
     };
 });
 
-$(document).on("click", 'restart', () => {
-
+$(document).on("click", '.restart', () => {
+    alert('sdsd');
 });
